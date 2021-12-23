@@ -1,0 +1,17 @@
+{
+  "name": "hp-validatejs",
+  "version": "1.0.0",
+  "description": "一个常用的自定义规则验证小插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afsdfsdf232/hp-validatejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
