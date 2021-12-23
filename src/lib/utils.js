@@ -185,7 +185,8 @@ export const objectTypeVerification = async (rules, key, values, cb) => {
     try {
       await validator(rules, values)
     } catch (err) {
-      await pushErr(key, values, err || message)
+      const errMessage = targetType(err,'string')? err : err.message;
+      await pushErr(key, values, errMessage || message)
     }
   }
 
