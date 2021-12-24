@@ -54,3 +54,20 @@
                                                 key: 验证的字段名，单个值验证为空 validate
                                                 message：错误信息
                                                 value：当前验证的值
+
+
+## 常用工具方法 （targetType，pick，queryParams，deepClone，deepMerge，debounce，timeFormat，timeFrom）
+## 1. targetType, 判断数据类型 targetType(object,string)
+   ## 参数：1.目标数据  2.类型 （string, array, null, object, number ...） 返回值 bool 类型
+   ## 参数  目标数据 返回值为当前数据的类型
+## 2. pick 提取对象中指定内容，pick(object, array, object)
+   ## 参数1：目标对象 ， 参数2：提取的key值列表， 参数3：可选，需要修改的对象的键值 _id: id, 将数据中_id 修改成 id
+## 3. queryParams 获取url中的参数 queryParams(url)
+## 4. deepClone 深度克隆 deepClone(object)
+## 5. deepMerge 对象深度合并
+## 6. timeForma 时间日期格式化 timeForma（date, forma）
+   ## 参数1：时间，类型 Number String Date，参数2：需要转换的格式 默认为yyyy-mm-dd，年:yyyy，月:mm，日:dd，时:hh，分:MM，秒:ss
+## 7. timeFrom 很久以前 timeFrom(time, format = String | false)
+   该函数必须传入第一个参数，格式为任何合法的时间格式、秒或毫秒的时间戳，第二个参数是可选的，返回的值类似刚刚，25分钟前，3小时前，7天前的结果。 如果第二个参数是时间的格式，当前和传入时间戳相差大于一个月时，返回格式化好的时间；如果第二个参数为false，则不会返回格式化好的时间，而是诸如"xxx年前"的结果。
+   ## timestamp <String> 时间戳
+      format <String / false> 时间格式，默认为yyyy-mm-dd，年为"yyyy"，月为"mm"，日为"dd"，时为"hh"，分为"MM"，秒为"ss"，格式可以自由搭配，如： yyyy:mm:dd，yyyy-mm-dd，yyyy年mm月dd日，yyyy年mm月dd日 hh时MM分ss秒，yyyy/mm/dd/，MM:ss等组合。 如果时间戳距离此时的时间，大于一个月，则返回一个格式化好的时间，如果此参数为false，返回均为"多久之前"的结果。
