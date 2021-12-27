@@ -1,6 +1,6 @@
 {
   "name": "hp-validatejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "一个常用的自定义规则验证小插件",
   "main": "index.js",
   "scripts": {

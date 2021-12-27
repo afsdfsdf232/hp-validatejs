@@ -2,9 +2,9 @@
 
 ## 使用方法
    ## 1.0 安装 
-      npm install hp-validate --save
+      npm install hp-validatejs OR yarn add hp-validatejs
    ## 1.1 引入插件
-     import { validate, validateAll } from 'hp-validate'
+     import { validate, validateAll } from 'hp-validatejs'
 
 ## 方法介绍
    ## 1.0 validate
